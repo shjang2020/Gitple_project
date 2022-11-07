@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  </head>
+  <body>
+    <div>
+      <canvas id="doughnut-chart" width="800" height="450"></canvas>
+      <script>
+        const income = 90000000;
+        const cost = 30000000;
+        const repayment = 70000000;
+        const ins = 30000000;
+        const dis_income = 89123456;
+
+        const ctx = document.getElementById('doughnut-chart');
+        const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['income', 'cost'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [income, cost],
+                    backgroundColor: [
+                        'rgba(200,200,200)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                }]
+            },
+            options: {
+                responsive:false,
+                title:{
+                    display:true,
+                    text:'test_income'
+                }
+            }
+        });
+        </script>
+    </div>
+  </body>
+</html>
