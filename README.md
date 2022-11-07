@@ -1,26 +1,27 @@
 # Gitple_project
 
 ### 주식회사 깃플에서 3개월이라는 짧은 시간동안 진행했던 프로젝트 및 활동들을 정리한 레포
-1.MP(모델 포트폴리오)
+
+1.Crawling으로 데이터 수집
+  - Web API를 파악하고 crawling을 활용하여 여러 데이터 수집
+  1) ticker 기준으로 매핑하여 isin 데이터 수집
+  2) 포트폴리오 스코어링에 활용하는 값(factor) 데이터 수집
+  
+2.MP(모델 포트폴리오)
   - 금융 관련 모델 포트폴리오 파이썬을 활용하여 구축
   1) 경기순환시계 - KOSIS API
   2) 다양한 입금 내역에서 소득 추출
   3) Glide Path
   4) Fama-French Factor model
   
-2.API 연동을 통한 push 및 기프티콘 발송
+3.신용평가모델
+  - 신용평가모델 구축에 필요한 적요들을 MYSQL 쿼리를 통해 계산 및 추출 
+
+4.API 연동을 통한 push 및 기프티콘 발송
   - 하나씩 수동으로 push 및 기프티콘 발송 방지를 위해 자동화 코드 생성
   1) Braze로 push 발송
   2) Giftishow로 기프티콘 발송
-  
-3.신용평가모델
-  - 신용평가모델 구축에 필요한 적요들을 MYSQL 쿼리를 통해 계산 및 추출 
-  
-4.Crawling으로 데이터 수집
-  - Web API를 파악하고 crawling을 활용하여 여러 데이터 수집
-  1) ticker 기준으로 매핑하여 isin 데이터 수집
-  2) 포트폴리오 스코어링에 활용하는 값(factor) 데이터 수집
-  
+ 
 5.고객 Segmentation
   1) 체리피커 추출
   - 마이데이터를 활용하여 고객별 Clustering
