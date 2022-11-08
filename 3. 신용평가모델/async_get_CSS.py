@@ -1,3 +1,5 @@
+## DB연결 이후 고객 리스트를 뽑고 여러 자산 연결 수를 파악하는 프로시저를 실행하는 코드
+
 import pandas as pd
 import time
 import asyncio
