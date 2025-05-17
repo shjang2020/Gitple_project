@@ -1,7 +1,60 @@
-3.신용평가모델
-  - 신용평가모델 구축에 필요한 적요들을 MYSQL 쿼리를 통해 계산 및 추출 
-ex) 요구불계좌 총 입금 금액(로그인 기준 최근 한달 기준)
-<img width="1395" alt="image" src="https://user-images.githubusercontent.com/75629926/200472990-5922729c-1ba2-42fb-86ac-52adbe0a838e.png">
+# 💳 신용평가모델
 
-ex) 요구불계좌 거래후 잔액이 0인 경험건수(로그인 기준 최근 한달 기준)
-<img width="1377" alt="image" src="https://user-images.githubusercontent.com/75629926/200473190-29da63f6-a470-4dc9-9d31-25e573c079a6.png">
+고객의 신용도를 평가하고 예측하는 모델링 모듈입니다.
+
+## 📋 주요 기능
+
+### 1. 신용평가 지표 개발
+- 신용점수 산정
+- 부도 예측
+- 신용등급 분류
+- 리스크 평가
+
+### 2. 데이터 분석
+- 고객 데이터 분석
+- 거래 패턴 분석
+- 신용 이력 분석
+- 위험 요인 도출
+
+### 3. 모델링
+- 머신러닝 모델 개발
+- 딥러닝 모델 개발
+- 모델 검증
+- 성능 평가
+
+## 🛠️ 사용 기술
+- Python
+- Scikit-learn
+- TensorFlow
+- PyTorch
+- Pandas
+- NumPy
+
+## 📊 모델 구조
+- 신용평가 모델
+  - 로지스틱 회귀
+  - 랜덤 포레스트
+  - XGBoost
+  - LightGBM
+- 딥러닝 모델
+  - 신경망
+  - LSTM
+  - Transformer
+
+## 💻 코드 구조
+```
+credit_scoring/
+├── models/
+│   ├── traditional.py
+│   └── deep_learning.py
+├── features/
+│   ├── engineering.py
+│   └── selection.py
+├── evaluation/
+│   ├── metrics.py
+│   └── validation.py
+└── utils/
+    ├── data_processor.py
+    └── visualization.py
+```
+
