@@ -24,11 +24,9 @@
 
 ## 🛠️ 사용 기술
 - Python
-- FastAPI
-- Redis
-- Celery
-- PostgreSQL
 - REST API
+- HTML
+- CSS
 
 ## 📊 시스템 구조
 - 알림 시스템
